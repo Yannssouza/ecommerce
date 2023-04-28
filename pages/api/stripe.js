@@ -2,19 +2,20 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
+    console.log(req.body.cartItems);
     try {
       const params = {
         submit_type: "pay",
         mode: "payment",
         payment_method_types: ["card"],
         billing_address_collection: "auto",
-        shipping_options: [{ shipping_rate: "" }],
-        line_items: [
-          {
-            price: "{{PRICE_ID}}",
-            quantity: 1,
-          },
+        shipping_options: [
+          { shipping_rate: "shr_1N1qEPKVOEpPitGAWOnJ4zo3" },
+          { shipping_rate: "shr_1N1qFwKVOEpPitGAyuUowLEc" },
         ],
+        line_items: req.body.cartItems.map((item) => {
+          const img = item.image[0].asset._ref;
+        }),
         success_url: `${req.headers.origin}/?success=true`,
         cancel_url: `${req.headers.origin}/?canceled=true`,
       };
