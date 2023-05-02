@@ -31,7 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/INFOWAY/CodingProjects/Training Projects/ecommerce",
+    "last_opened_file_path": "C:/Users/INFOWAY/CodingProjects/Training Projects/ecommerce/context/StateContext.js",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -40,6 +40,7 @@
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\INFOWAY\\CodingProjects\\Training Projects\\spotify-clone\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.general",
     "ts.external.directory.path": "C:\\Users\\INFOWAY\\CodingProjects\\Training Projects\\ecommerce\\sanity_ecommerce\\node_modules\\typescript\\lib",
+    "two.files.diff.last.used.file": "C:/Users/INFOWAY/CodingProjects/Training Projects/ecommerce/context/StateContext.js",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -108,6 +109,8 @@
       <workItem from="1682592937966" duration="6335000" />
       <workItem from="1682682163060" duration="7091000" />
       <workItem from="1683037117974" duration="3324000" />
+      <workItem from="1683040495130" duration="823000" />
+      <workItem from="1683041773455" duration="339000" />
     </task>
     <servers />
   </component>
