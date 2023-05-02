@@ -28,6 +28,7 @@ const ProductDetails = ({ product, products }) => {
           <div className="small-images-container">
             {image?.map((item, i) => (
               <img
+                key={i}
                 src={urlFor(item)}
                 alt=""
                 className={
@@ -99,6 +100,7 @@ export const getStaticPaths = async () => {
   const paths = products.map((product) => ({
     params: { slug: product.slug.current },
   }));
+
   return {
     paths,
     fallback: "blocking",
